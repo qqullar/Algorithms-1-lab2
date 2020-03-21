@@ -36,10 +36,12 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         // using resizing array semantics
         if (size == s.length) resize(2 * s.length);
 
-        // find random empty position to fill
+        // detecting non-empty position
         int pos = StdRandom.uniform(s.length);
-        while (s[pos] != null)
-            pos = StdRandom.uniform(s.length);
+
+        // choosing position with non-empty containing
+        while (s[pos % s.length] != null)
+            pos = (pos + 1) % s.length;
 
         s[pos] = item;
         ++size;
@@ -132,7 +134,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // unit testing (required)
     public static void main(String[] args) {
         RandomizedQueue<Integer> sample = new RandomizedQueue<>();
-        for (int i = 0; i < 10; ++i)
+        for (int i = 0; i < 100000; ++i)
             sample.enqueue(i);
 
         for (int i = 0; i < 20; ++i)
@@ -141,15 +143,15 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         System.out.println();
         System.out.println();
 
-        for (Integer s1 : sample)
-            System.out.println(s1);
+//        for (Integer s1 : sample)
+//            System.out.println(s1);
 
         System.out.println();
         System.out.println();
 
 
-        for (Integer s2 : sample)
-            System.out.println(s2);
+//        for (Integer s2 : sample)
+//            System.out.println(s2);
 
     }
 }
