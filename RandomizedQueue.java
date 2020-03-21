@@ -65,16 +65,26 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         return s[pos];
     }
 
+
+    // TODO: add semantics when we must make the array smaller
     private void resize(int capacity) {
         Item[] copy = (Item[]) new Object[capacity];
-        if (capacity < s.length) StdRandom.shuffle(s, 0, capacity);
-        System.arraycopy(s, 0, copy, 0, capacity);
+
+        if (capacity < s.length) {
+            StdRandom.shuffle(s, 0, capacity);
+        }
+
+        for (int i = 0; i < s.length; ++i){
+            copy[i] = s[i];
+        }
         s = copy;
     }
 
 
     // return an independent iterator over items in random order
-    public Iterator<Item> iterator() { return new RandomizedQueueIterator();}
+    public Iterator<Item> iterator() {
+        return new RandomizedQueueIterator();
+    }
 
     private class RandomizedQueueIterator implements Iterator<Item> {
         // "randomized" cuz each time we start iteration
@@ -91,19 +101,24 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
 
         public Item next() {
-            if(!hasNext())
+            if (!hasNext())
                 throw new java.util.NoSuchElementException("no more items to return");
 
             // choosing position with non-empty containing
             while (s[pos] == null)
-                pos = (pos+1) % s.length;
+                pos = (pos + 1) % s.length;
             --sz;
             return s[pos];
-
         }
     }
 
     // unit testing (required)
     public static void main(String[] args) {
+        RandomizedQueue<Integer> sample = new RandomizedQueue<>();
+        for (int i = 0; i < 10; ++i)
+            sample.enqueue(i);
+
+        for (int i = 0; i < 20; ++i)
+            System.out.println(sample.sample());
     }
 }
