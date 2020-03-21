@@ -8,7 +8,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] s;
     private int size = 0;
 
-
     // construct an empty randomized queue
     public RandomizedQueue() {
         s = (Item[]) new Object[1];
@@ -23,6 +22,14 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     public int size() {
         return size;
     }
+
+    // TODO: transform next lines in one function
+    // detecting non-empty position
+//    int pos = StdRandom.uniform(s.length);
+//
+//    // choosing position with non-empty containing
+//        while (s[pos % s.length] == null)
+//    pos = (pos + 1) % s.length;
 
     // add the item
     public void enqueue(Item item) {
@@ -45,9 +52,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         // detecting non-empty position
         int pos = StdRandom.uniform(s.length);
-        while (s[pos] == null) {
-            pos = StdRandom.uniform(s.length);
-        }
+
+        // choosing position with non-empty containing
+        while (s[pos % s.length] == null)
+            pos = (pos + 1) % s.length;
 
         Item item = s[pos];
         s[pos] = null;
@@ -59,9 +67,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     public Item sample() {
         // detecting non-empty position
         int pos = StdRandom.uniform(s.length);
-        while (s[pos] == null) {
-            pos = StdRandom.uniform(s.length);
-        }
+
+        // choosing position with non-empty containing
+        while (s[pos % s.length] == null)
+            pos = (pos + 1) % s.length;
+
         return s[pos];
     }
 
@@ -78,6 +88,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             copy[i] = s[i];
         }
         s = copy;
+    }
+
+    private int max(int x, int y) {
+        if (x > y) return x;
+        else return y;
     }
 
 
@@ -108,9 +123,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             while (s[pos % s.length] == null)
                 pos = (pos + 1) % s.length;
 
-            Item item = s[pos];
+            Item item = s[pos++];
             --sz;
-            ++pos;
             return item;
         }
     }
@@ -126,8 +140,16 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         System.out.println();
         System.out.println();
-        for (Integer s1 : sample) {
+
+        for (Integer s1 : sample)
             System.out.println(s1);
-        }
+
+        System.out.println();
+        System.out.println();
+
+
+        for (Integer s2 : sample)
+            System.out.println(s2);
+
     }
 }
