@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/queues.iml" filepath="$PROJECT_DIR$/queues.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name=".lift">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.lift/checkstyle-lift.jar!/" />
+        <root url="jar://$PROJECT_DIR$/.lift/algs4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="algs4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/algs4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/algs4.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>
