@@ -74,7 +74,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             StdRandom.shuffle(s, 0, capacity);
         }
 
-        for (int i = 0; i < s.length; ++i){
+        for (int i = 0; i < s.length; ++i) {
             copy[i] = s[i];
         }
         s = copy;
@@ -105,10 +105,13 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
                 throw new java.util.NoSuchElementException("no more items to return");
 
             // choosing position with non-empty containing
-            while (s[pos] == null)
+            while (s[pos % s.length] == null)
                 pos = (pos + 1) % s.length;
+
+            Item item = s[pos];
             --sz;
-            return s[pos];
+            ++pos;
+            return item;
         }
     }
 
@@ -120,5 +123,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         for (int i = 0; i < 20; ++i)
             System.out.println(sample.sample());
+
+        System.out.println();
+        System.out.println();
+        for (Integer s1 : sample) {
+            System.out.println(s1);
+        }
     }
 }

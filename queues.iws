@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queues.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/queues.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/queues/queues.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/queues/queues.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/queues/queues.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/queues/queues.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/queues/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/queues/queues.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,12 +73,25 @@
       <updated>1584734972103</updated>
       <workItem from="1584734973481" duration="205000" />
       <workItem from="1584735209952" duration="1241000" />
-      <workItem from="1584738637002" duration="10709000" />
+      <workItem from="1584738637002" duration="10745000" />
+      <workItem from="1584759656914" duration="1168000" />
     </task>
+    <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
+      <created>1584755752926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584755752927</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Likely working version, but some tests are needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Likely working version, but some tests are needed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584751631822">
@@ -87,25 +102,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584751624416" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584752380325">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584755751762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584752380325" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584752380325">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584755751762" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584760816554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584752380325" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584752380325">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584760816554" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584760816554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584752380325" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584752380325">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584760816554" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584760816554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584752380325" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584752293312">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584760816554" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584760816554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584752293312" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584760816554" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584759714827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584759714827" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584759981699">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584759981699" />
   </component>
 </project>
