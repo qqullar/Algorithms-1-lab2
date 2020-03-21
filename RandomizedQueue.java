@@ -125,7 +125,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             while (s[pos % s.length] == null)
                 pos = (pos + 1) % s.length;
 
-            Item item = s[pos++];
+            Item item = s[pos];
             --sz;
             return item;
         }
