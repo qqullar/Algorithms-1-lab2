@@ -72,7 +72,7 @@
       <workItem from="1584735209952" duration="1241000" />
       <workItem from="1584738637002" duration="10745000" />
       <workItem from="1584759656914" duration="1185000" />
-      <workItem from="1584798262213" duration="8120000" />
+      <workItem from="1584798262213" duration="14215000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584814842775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented resizing down semantics">
+      <created>1584830529871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584830529871</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +128,8 @@
     <MESSAGE value="optimizing some semantics" />
     <MESSAGE value="new emplementation" />
     <MESSAGE value="fixing some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing some bugs" />
+    <MESSAGE value="implemented resizing down semantics" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented resizing down semantics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584751631822">
@@ -132,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584751624416" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584814841777">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584830528965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584814841777" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584830528965" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1584830488115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -176,20 +184,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584798287272" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584829791744">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584838808293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584829791744" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/RandomizedQueue.java</url>
-          <line>203</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584838808293" />
   </component>
 </project>
