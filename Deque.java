@@ -11,7 +11,8 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     // construct an empty deque
-    public Deque() {}
+    public Deque() {
+    }
 
     // is the deque empty?
     public boolean isEmpty() {
@@ -61,7 +62,7 @@ public class Deque<Item> implements Iterable<Item> {
 
     // remove and return the item from the front
     public Item removeFirst() {
-        if(isEmpty())
+        if (isEmpty())
             throw new java.util.NoSuchElementException("remove from empty deque");
 
         Item item = first.item;
@@ -77,7 +78,7 @@ public class Deque<Item> implements Iterable<Item> {
 
     // remove and return the item from the back
     public Item removeLast() {
-        if(isEmpty())
+        if (isEmpty())
             throw new java.util.NoSuchElementException("remove from empty deque");
 
         Item item = last.item;
@@ -106,13 +107,12 @@ public class Deque<Item> implements Iterable<Item> {
         }
 
         public Item next() {
-            if(!hasNext())
+            if (!hasNext())
                 throw new java.util.NoSuchElementException("no more items to return");
 
             Item item = current.item;
             current = current.next;
             return item;
-
         }
 
         public void remove() {

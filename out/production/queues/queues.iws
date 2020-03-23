@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="" />
+    <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomizedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,8 +46,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Application.RandomizedQueue">
+  <component name="RunManager" selected="Application.Permutation">
     <configuration name="Deque" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="queues" />
@@ -37,7 +56,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomizedQueue" type="Application" factoryName="Application">
+    <configuration name="Permutation" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Permutation" />
+      <module name="queues" />
+      <option name="PROGRAM_PARAMETERS" value="10" />
+      <option name="VM_PARAMETERS" value="-ea " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomizedQueue" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
       <module name="queues" />
       <method v="2">
@@ -52,6 +80,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Deque" />
+      <item itemvalue="Application.Permutation" />
       <item itemvalue="Application.RandomizedQueue" />
     </list>
   </component>
@@ -69,6 +98,9 @@
       <workItem from="1584735209952" duration="1241000" />
       <workItem from="1584738637002" duration="10745000" />
       <workItem from="1584759656914" duration="1185000" />
+      <workItem from="1584798262213" duration="16616000" />
+      <workItem from="1584884375264" duration="4945000" />
+      <workItem from="1584971228966" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -84,7 +116,42 @@
       <option name="project" value="LOCAL" />
       <updated>1584760840686</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="optimizing some semantics">
+      <created>1584814431141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584814431141</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new emplementation">
+      <created>1584814817884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584814817884</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixing some bugs">
+      <created>1584814842775</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584814842775</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented resizing down semantics">
+      <created>1584830529871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584830529871</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added some unit testing">
+      <created>1584840181872</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584840181872</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,44 +160,88 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Likely working version, but some tests are needed" />
     <MESSAGE value="fix issues with iterator" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix issues with iterator" />
+    <MESSAGE value="optimizing some semantics" />
+    <MESSAGE value="new emplementation" />
+    <MESSAGE value="fixing some bugs" />
+    <MESSAGE value="implemented resizing down semantics" />
+    <MESSAGE value="added some unit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some unit testing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="426" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584751631822">
+    <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584971899732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="426" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584751631822" />
-    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584751624416">
+    <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584971899732" />
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584886441202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584751624416" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584760838897">
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584840181224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584760838897" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584760842267">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584840181224" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1584849272956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584760842267" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584760842267">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1584849272955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584760842267" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584760842267">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272955" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1584849272955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584760842267" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584760842267">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272955" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1584849272956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584760842267" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584798287272">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584849272956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584798287272" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584759981699">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1584849272956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584759981699" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1584849272956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1584849272956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584849272956" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1584886051188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584886051188" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1584840186148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584840186148" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584884375896">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584884375896" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584841327691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584841327691" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584971871374">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584971871374" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RandomizedQueue.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

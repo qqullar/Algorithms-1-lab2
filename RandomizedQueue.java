@@ -71,7 +71,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // return a random item (but do not remove it)
     public Item sample() {
-        if(isEmpty())
+        if (isEmpty())
             throw new java.util.NoSuchElementException();
 
         // detecting non-empty position
@@ -94,7 +94,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
                     // copy[0] = s[1]
                     // then j+= 1
                     copy[j++] = s[i];
-//                    StdRandom.shuffle(s, 0, capacity);
+//                  StdRandom.shuffle(s, 0, capacity);
                 }
             }
         } else {
