@@ -33,6 +33,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // add the item
     public void enqueue(Item item) {
+        if (item == null)
+            throw new IllegalArgumentException();
+
         // using resizing array semantics
         if (size == s.length) resize(2 * s.length);
 
@@ -49,7 +52,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // remove and return a random item
     public Item dequeue() {
         if (size <= 0)
-            throw new IllegalArgumentException();
+            throw new java.util.NoSuchElementException();
 
         // resizing too large array
         if (size == s.length / 4) resize(s.length / 2);
@@ -68,12 +71,14 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // return a random item (but do not remove it)
     public Item sample() {
+        if(isEmpty())
+            throw new java.util.NoSuchElementException();
+
         // detecting non-empty position
         int pos = StdRandom.uniform(s.length);
-
-        // choosing position with non-empty containing
-        while (s[pos % s.length] == null)
-            pos = (pos + 1) % s.length;
+        while (s[pos] == null) {
+            pos = StdRandom.uniform(s.length);
+        }
 
         return s[pos];
     }
@@ -149,6 +154,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         RandomizedQueueTester.testSampleFunc();
         RandomizedQueueTester.tesIteratorRemoveFunc();
         RandomizedQueueTester.testIteratorNextFunc();
+
+        RandomizedQueue<String> rq = new RandomizedQueue<>();
+
+        System.out.println("All tests were passsed");
     }
 }
 
@@ -262,7 +271,6 @@ class RandomizedQueueTester {
 
     public static void testIteratorNextFunc() {
         testIteratorNextFunc_cornerCase();
-
     }
 
     private static void testIteratorNextFunc_cornerCase() {
@@ -279,7 +287,7 @@ class RandomizedQueueTester {
             cond = true;
         }
 
-        assert cond: "Throw a java.util.NoSuchElementException if the client " +
+        assert cond : "Throw a java.util.NoSuchElementException if the client " +
                 "calls the next() method in the iterator " +
                 "when there are no more items to return.";
 
@@ -299,7 +307,7 @@ class RandomizedQueueTester {
             cond = true;
         }
 
-        assert cond: "Throw an UnsupportedOperationException " +
+        assert cond : "Throw an UnsupportedOperationException " +
                 "if the client calls the " +
                 "remove() method in the iterator.";
 
