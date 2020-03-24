@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Iterator;
@@ -115,11 +116,18 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         // "randomized" cuz each time we start iteration
         // from randomly chosen pos and the iterates
         // to the right
-
         private int sz = size;
-
+        private int[] positions = new int[size];
         // unique starting position for each iterator
         private int pos = StdRandom.uniform(s.length);
+
+        public RandomizedQueueIterator() {
+            for (int i = 0, j = 0; i < s.length; i++) {
+                if (s[i] != null) {
+                    positions[j++] = i;
+                }
+            }
+        }
 
         public boolean hasNext() {
             return sz > 0;
@@ -129,11 +137,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             if (!hasNext())
                 throw new java.util.NoSuchElementException("no more items to return");
 
-            // choosing position with non-empty containing
-            while (s[pos % s.length] == null)
-                pos = (pos + 1) % s.length;
-
-            Item item = s[pos++];
+            Item item = s[positions[pos++ % positions.length]];
             --sz;
             return item;
         }
@@ -156,6 +160,12 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         RandomizedQueueTester.testIteratorNextFunc();
 
         RandomizedQueue<String> rq = new RandomizedQueue<>();
+        for (int i = 0; i < 100; i++) {
+            rq.enqueue(String.valueOf(i));
+        }
+
+        for(String s : rq)
+            StdOut.println(s);
 
         System.out.println("All tests were passsed");
     }

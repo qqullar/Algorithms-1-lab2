@@ -232,5 +232,9 @@ public class Deque<Item> implements Iterable<Item> {
         }
 
         System.out.println("Size:" + sample.size());
+
+
+        // Optional tests
+
     }
 }

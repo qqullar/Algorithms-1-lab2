@@ -9,9 +9,9 @@ public class Permutation {
             String value = StdIn.readString();
             rq.enqueue(value);
         }
-
+        var it = rq.iterator();
         for (int i = 0; i < k; i++) {
-            StdOut.println(rq.dequeue());
+            StdOut.println(it.next());
         }
     }
 }
