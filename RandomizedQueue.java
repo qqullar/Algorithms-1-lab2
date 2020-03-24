@@ -118,8 +118,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         // to the right
         private int sz = size;
         private int[] positions = new int[size];
-        // unique starting position for each iterator
-        private int pos = StdRandom.uniform(s.length);
+        private int i = 0;
 
         public RandomizedQueueIterator() {
             for (int i = 0, j = 0; i < s.length; i++) {
@@ -127,6 +126,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
                     positions[j++] = i;
                 }
             }
+            StdRandom.shuffle(positions);
         }
 
         public boolean hasNext() {
@@ -136,9 +136,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         public Item next() {
             if (!hasNext())
                 throw new java.util.NoSuchElementException("no more items to return");
-
-            Item item = s[positions[pos++ % positions.length]];
-            --sz;
+            int pos = positions[i++];
+            Item item = s[pos];
+            sz--;
             return item;
         }
 
