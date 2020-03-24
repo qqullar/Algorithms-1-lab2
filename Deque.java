@@ -29,16 +29,15 @@ public class Deque<Item> implements Iterable<Item> {
         if (item == null)
             throw new IllegalArgumentException("adding null");
 
-        Node newFirst = new Node();
+        Node oldFirst = first;
 
-        newFirst.item = item;
-        newFirst.prev = null;
+        first = new Node();
 
-        newFirst.next = first;
+        first.item = item;
+        first.next = oldFirst;
 
-        // making first
-        first = newFirst;
         if (isEmpty()) last = first;
+        else oldFirst.prev = first;
         size++;
     }
 
@@ -85,7 +84,7 @@ public class Deque<Item> implements Iterable<Item> {
         size--;
         if (isEmpty()) {
             last = null;
-            first = null;
+            first = last;
         }
         else {
             last = last.prev;
@@ -238,12 +237,12 @@ public class Deque<Item> implements Iterable<Item> {
         System.out.println("Size:" + sample.size());
 
 
-        // Optional tests
-        Deque<Integer> deque = new Deque<Integer>();
-        deque.addFirst(1);
-        deque.removeLast()  ;
-        deque.addFirst(3);
-        deque.addFirst(4);
-        deque.removeLast();
+//        // Optional tests
+//        Deque<Integer> deque = new Deque<Integer>();
+//        deque.addFirst(1);
+//        deque.removeLast()  ;
+//        deque.addFirst(3);
+//        deque.addFirst(4);
+//        deque.removeLast();
     }
 }
