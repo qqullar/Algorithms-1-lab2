@@ -100,7 +100,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="5543000" />
+      <workItem from="1585012859545" duration="8091000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585019160487</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="First after 95/100&#10;Looks like I've made iterator more random">
+      <created>1585020737376</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585020737376</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +236,8 @@
     <MESSAGE value="First try after 93/100" />
     <MESSAGE value="93/100 variant" />
     <MESSAGE value="Seems like the issue was fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seems like the issue was fixed" />
+    <MESSAGE value="First after 95/100&#10;Looks like I've made iterator more random" />
+    <option name="LAST_COMMIT_MESSAGE" value="First after 95/100&#10;Looks like I've made iterator more random" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -240,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585019159703">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585020736587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585019159703" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585020736587" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585020685020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585004636772" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585017471950">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585021991749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585017471950" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585021991749" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584884375896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584841327691" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585017313924">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585020808317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585017313924" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585020808317" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

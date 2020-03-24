@@ -164,7 +164,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             rq.enqueue(String.valueOf(i));
         }
 
-        for(String s : rq)
+        for (String s : rq)
             StdOut.println(s);
 
         System.out.println("All tests were passsed");
