@@ -37,7 +37,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // remove and return a random item
     public Item dequeue() {
         if (size <= 0)
-                  throw new java.util.NoSuchElementException();
+            throw new java.util.NoSuchElementException();
 
         // resizing too large array
         if (size == s.length / 4) resize(s.length / 2);

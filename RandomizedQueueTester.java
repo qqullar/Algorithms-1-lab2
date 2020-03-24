@@ -130,7 +130,7 @@ class RandomizedQueueTester {
 
     }
 
-    public static void tesIteratorRemoveFunc() {
+    public static void testIteratorRemoveFunc() {
         RandomizedQueue<Integer> sample = new RandomizedQueue<>();
 
         // Throw an UnsupportedOperationException

@@ -70,11 +70,10 @@ public class Deque<Item> implements Iterable<Item> {
         // all pointers makes null
         size--;
 
-        if (isEmpty()){
+        if (isEmpty()) {
             last = null;
             first = null;
-        }
-        else {
+        } else {
             first = first.next;
             first.prev = null; // loitering
         }
@@ -91,8 +90,7 @@ public class Deque<Item> implements Iterable<Item> {
         if (isEmpty()) {
             last = null;
             first = null;
-        }
-        else {
+        } else {
             last = last.prev;
             last.next = null; // loitering
         }
@@ -133,6 +131,6 @@ public class Deque<Item> implements Iterable<Item> {
 
     // unit testing (required)
     public static void main(String[] args) {
-       DequerTester.test();
+        DequerTester.test();
     }
 }

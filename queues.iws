@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DequerTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomizedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomizedQueueTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomizedQueueTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="18603000" />
+      <workItem from="1585012859545" duration="19225000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -257,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585088063883</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Move unit testing to another class">
+      <created>1585088913934</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585088913934</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +294,8 @@
     <MESSAGE value="99/100" />
     <MESSAGE value="looks like 100/100 version" />
     <MESSAGE value="Really 100/100 variant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Really 100/100 variant" />
+    <MESSAGE value="Move unit testing to another class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move unit testing to another class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -297,10 +306,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585088883115">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585088913212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585088883115" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585088913212" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585088699598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -353,9 +362,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584841327691" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585086827652">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585089177501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585086827652" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585089177501" />
   </component>
 </project>
