@@ -37,7 +37,7 @@ public class Deque<Item> implements Iterable<Item> {
         first.next = oldFirst;
 
         if (isEmpty()) last = first;
-        else oldFirst.prev = first;
+        else first.next.prev = first;
         size++;
     }
 
@@ -55,7 +55,7 @@ public class Deque<Item> implements Iterable<Item> {
         last.prev = oldLast;
 
         if (isEmpty()) first = last;
-        else oldLast.next = last;
+        else last.prev.next = last;
         size++;
     }
 
@@ -237,12 +237,12 @@ public class Deque<Item> implements Iterable<Item> {
         System.out.println("Size:" + sample.size());
 
 
-//        // Optional tests
-//        Deque<Integer> deque = new Deque<Integer>();
-//        deque.addFirst(1);
-//        deque.removeLast()  ;
-//        deque.addFirst(3);
-//        deque.addFirst(4);
-//        deque.removeLast();
+        // Optional tests
+        Deque<Integer> deque = new Deque<Integer>();
+        deque.addFirst(1);
+        deque.removeLast()  ;
+        deque.addFirst(3);
+        deque.addFirst(4);
+        deque.removeLast();
     }
 }
