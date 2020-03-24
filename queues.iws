@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="13001000" />
+      <workItem from="1585012859545" duration="13264000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -228,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585071362406</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Tried to fix loitering (98/100 the last mark)">
+      <created>1585074434745</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585074434745</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +259,8 @@
     <MESSAGE value="First after 95/100&#10;Looks like I've made iterator more random" />
     <MESSAGE value="98/100 release. Needed to find the way, how to reduce memory usage for Deque and upgrade timing for RandomizedQueue" />
     <MESSAGE value="Changed firstly non-valuable thing but maybe this will help to avoid loitering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed firstly non-valuable thing but maybe this will help to avoid loitering" />
+    <MESSAGE value="Tried to fix loitering (98/100 the last mark)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried to fix loitering (98/100 the last mark)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -264,10 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585071361676">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585074434025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585071361676" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585074434025" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585074356589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -308,10 +315,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1585073770084" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585071365398">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585074438980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585071365398" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585074438980" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584884375896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,16 +331,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585020808317" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Deque.java</url>
-          <line>254</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
