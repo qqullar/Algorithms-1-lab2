@@ -72,7 +72,7 @@ public class Deque<Item> implements Iterable<Item> {
         first = first.next;
         size--;
 
-        if (isEmpty()) last = null;
+        if (isEmpty()) last = first;
         return item;
     }
 
@@ -233,8 +233,8 @@ public class Deque<Item> implements Iterable<Item> {
 
         System.out.println("Size:" + sample.size());
 
-
-        // Optional tests
-
+//
+//        // Optional tests
+//        Deque<Integer> dq = new Deque<>();
     }
 }
