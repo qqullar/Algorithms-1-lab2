@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/queues/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/queues/queues.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="2585000" />
+      <workItem from="1585012859545" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585016667468</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="First try after 93/100">
+      <created>1585017482299</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017482299</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +212,8 @@
     <MESSAGE value="Version with tests" />
     <MESSAGE value="Try after first 91/100" />
     <MESSAGE value="First try after 92/100" />
-    <option name="LAST_COMMIT_MESSAGE" value="First try after 92/100" />
+    <MESSAGE value="First try after 93/100" />
+    <option name="LAST_COMMIT_MESSAGE" value="First try after 93/100" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -217,42 +224,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585016666443">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585017481363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585016666443" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585017455856">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585017481363" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1585018709661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585017455856" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585017455856">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709661" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1585018709661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585017455856" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585017455856">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709661" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1585018709661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585017455856" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585017455856">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709661" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1585018709661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585017455856" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585017266394">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709661" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585018709662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585017266394" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585017266394">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585018709662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585017266394" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585017266394">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585018709661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585017266394" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585017266394">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709661" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585018709662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585017266394" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585018709662" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1585004636772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -279,8 +286,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Deque.java</url>
-          <line>240</line>
-          <option name="timeStamp" value="2" />
+          <line>244</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
