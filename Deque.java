@@ -68,10 +68,16 @@ public class Deque<Item> implements Iterable<Item> {
 
         // here if sz == 1 then here
         // all pointers makes null
-        first = first.next;
         size--;
 
-        if (isEmpty()) last = first;
+        if (isEmpty()){
+            last = null;
+            first = null;
+        }
+        else {
+            first = first.next;
+            first.prev = null;
+        }
         return item;
     }
 
@@ -84,7 +90,7 @@ public class Deque<Item> implements Iterable<Item> {
         size--;
         if (isEmpty()) {
             last = null;
-            first = last;
+            first = null;
         }
         else {
             last = last.prev;
@@ -238,11 +244,6 @@ public class Deque<Item> implements Iterable<Item> {
 
 
         // Optional tests
-        Deque<Integer> deque = new Deque<Integer>();
-        deque.addFirst(1);
-        deque.removeLast()  ;
-        deque.addFirst(3);
-        deque.addFirst(4);
-        deque.removeLast();
+        Deque<String> deque = new Deque<>();
     }
 }

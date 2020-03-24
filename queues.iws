@@ -100,7 +100,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="10679000" />
+      <workItem from="1585012859545" duration="13001000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585025852940</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changed firstly non-valuable thing but maybe this will help to avoid loitering">
+      <created>1585071362406</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585071362406</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +252,8 @@
     <MESSAGE value="Seems like the issue was fixed" />
     <MESSAGE value="First after 95/100&#10;Looks like I've made iterator more random" />
     <MESSAGE value="98/100 release. Needed to find the way, how to reduce memory usage for Deque and upgrade timing for RandomizedQueue" />
-    <option name="LAST_COMMIT_MESSAGE" value="98/100 release. Needed to find the way, how to reduce memory usage for Deque and upgrade timing for RandomizedQueue" />
+    <MESSAGE value="Changed firstly non-valuable thing but maybe this will help to avoid loitering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed firstly non-valuable thing but maybe this will help to avoid loitering" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -256,50 +264,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585025852148">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585071361676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585025852148" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585071299675">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585071361676" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585074356589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585071299675" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585071299674">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585074356589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585071299674" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585071299674">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585074356589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585071299674" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585071299675">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585074356589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585071299675" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585070761770">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585074119591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585070761770" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585070761770">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585074119591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585070761770" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585070761770">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585074119591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585070761770" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585070761770">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585074119591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585070761770" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1585004636772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585004636772" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585025857454">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1585073770084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585025857454" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1585073770084" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585071365398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585071365398" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584884375896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,8 +330,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Deque.java</url>
-          <line>243</line>
-          <option name="timeStamp" value="8" />
+          <line>254</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
