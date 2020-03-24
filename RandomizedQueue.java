@@ -24,14 +24,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         return size;
     }
 
-    // TODO: transform next lines in one function
-    // detecting non-empty position
-//    int pos = StdRandom.uniform(s.length);
-//
-//    // choosing position with non-empty containing
-//        while (s[pos % s.length] == null)
-//    pos = (pos + 1) % s.length;
-
     // add the item
     public void enqueue(Item item) {
         if (item == null)
@@ -39,34 +31,23 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         // using resizing array semantics
         if (size == s.length) resize(2 * s.length);
-
-        // detecting non-empty position
-        int pos = StdRandom.uniform(s.length);
-        while (s[pos] != null) {
-            pos = StdRandom.uniform(s.length);
-        }
-
-        s[pos] = item;
-        ++size;
+        s[size++] = item;
     }
 
     // remove and return a random item
     public Item dequeue() {
         if (size <= 0)
-            throw new java.util.NoSuchElementException();
+                  throw new java.util.NoSuchElementException();
 
         // resizing too large array
         if (size == s.length / 4) resize(s.length / 2);
 
         // detecting non-empty position
-        int pos = StdRandom.uniform(s.length);
-        while (s[pos] == null) {
-            pos = StdRandom.uniform(s.length);
-        }
+        int randPos = StdRandom.uniform(size);
+        Item item = s[randPos];
+        s[randPos] = s[--size];
+        s[size] = null; // loitering
 
-        Item item = s[pos];
-        s[pos] = null;
-        --size;
         return item;
     }
 
@@ -75,34 +56,16 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (isEmpty())
             throw new java.util.NoSuchElementException();
 
-        // detecting non-empty position
-        int pos = StdRandom.uniform(s.length);
-        while (s[pos] == null) {
-            pos = StdRandom.uniform(s.length);
-        }
-
-        return s[pos];
+        int randPos = StdRandom.uniform(size);
+        return s[randPos];
     }
 
     // TODO: add semantics when we must make the array smaller
     private void resize(int capacity) {
         Item[] copy = (Item[]) new Object[capacity];
 
-        if (capacity < s.length) {
-            for (int i = 0, j = 0; i < s.length && j < size; ++i) {
-                if (s[i] != null) {
-                    // if i = 1 & j = 0 we have
-                    // copy[0] = s[1]
-                    // then j+= 1
-                    copy[j++] = s[i];
-//                  StdRandom.shuffle(s, 0, capacity);
-                }
-            }
-        } else {
-            for (int i = 0; i < s.length; ++i) {
-                copy[i] = s[i];
-            }
-        }
+        for (int i = 0; i < size; ++i)
+            copy[i] = s[i];
 
         s = copy;
     }
@@ -121,10 +84,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         private int i = 0;
 
         public RandomizedQueueIterator() {
-            for (int i = 0, j = 0; i < s.length; i++) {
-                if (s[i] != null) {
-                    positions[j++] = i;
-                }
+            for (int j = 0; j < size; j++) {
+                positions[j] = j;
             }
             StdRandom.shuffle(positions);
         }
@@ -136,8 +97,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         public Item next() {
             if (!hasNext())
                 throw new java.util.NoSuchElementException("no more items to return");
-            int pos = positions[i++];
-            Item item = s[pos];
+
+            int randPos = positions[i++];
+            Item item = s[randPos];
             sz--;
             return item;
         }
@@ -159,13 +121,16 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         RandomizedQueueTester.tesIteratorRemoveFunc();
         RandomizedQueueTester.testIteratorNextFunc();
 
-        RandomizedQueue<String> rq = new RandomizedQueue<>();
+        RandomizedQueue<Integer> rq = new RandomizedQueue<>();
         for (int i = 0; i < 100; i++) {
-            rq.enqueue(String.valueOf(i));
+            rq.enqueue(i);
         }
 
-        for (String s : rq)
-            StdOut.println(s);
+        for(int t : rq) {
+            StdOut.print(t);
+            System.out.println();
+        }
+
 
         System.out.println("All tests were passsed");
     }

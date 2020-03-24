@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1db267-17e0-4a54-ae93-f4b4a8284466" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomizedQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queues.iws" beforeDir="false" afterPath="$PROJECT_DIR$/queues.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
-  <component name="RunManager" selected="Application.Deque">
+  <component name="RunManager" selected="Application.RandomizedQueue">
     <configuration name="Deque" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="queues" />
@@ -99,7 +101,7 @@
       <workItem from="1584798262213" duration="16616000" />
       <workItem from="1584884375264" duration="4945000" />
       <workItem from="1584971228966" duration="16432000" />
-      <workItem from="1585012859545" duration="13264000" />
+      <workItem from="1585012859545" duration="17597000" />
     </task>
     <task id="LOCAL-00001" summary="Likely working version, but some tests are needed">
       <created>1584755752926</created>
@@ -234,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585074434745</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="99/100">
+      <created>1585074598437</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585074598437</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +269,8 @@
     <MESSAGE value="98/100 release. Needed to find the way, how to reduce memory usage for Deque and upgrade timing for RandomizedQueue" />
     <MESSAGE value="Changed firstly non-valuable thing but maybe this will help to avoid loitering" />
     <MESSAGE value="Tried to fix loitering (98/100 the last mark)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tried to fix loitering (98/100 the last mark)" />
+    <MESSAGE value="99/100" />
+    <option name="LAST_COMMIT_MESSAGE" value="99/100" />
   </component>
   <component name="WindowStateProjectService">
     <state x="410" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585005919458">
@@ -271,42 +281,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584886441202" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585074434025">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1585074597688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585074434025" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585074356589">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585074597688" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585087728428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585074356589">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585087728428" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585087728428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585074356589">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585087728428" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585087728428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585074356589">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585087728428" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585087728428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585074356589" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585074119591">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585087728428" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585087690189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585074119591">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585087690189" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585087690189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585074119591">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585087690189" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585087690189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585074119591">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585087690189" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585087690189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585074119591" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585087690189" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1585004636772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -327,9 +337,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584841327691" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585020808317">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585086827652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585020808317" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585086827652" />
   </component>
 </project>
